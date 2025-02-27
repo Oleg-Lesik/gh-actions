@@ -1,0 +1,10 @@
+name: basic_ci_test_2
+on: workflow_dispatch
+jobs:
+  test-job:
+    runs-on: ubuntu-latest
+    steps:
+    - name: print_2_msg_one_line
+      run: |
+        echo "hello1"
+        echo "hello2"
