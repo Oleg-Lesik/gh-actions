@@ -2,9 +2,10 @@ name: ci
 on: workflow_dispatch
 jobs:
   fisrt-step:
+    name: runs-first test
     runs-on: ubuntu-latest
     steps: 
-      -name: say hello
-        run: echo Hello!world
-      -name: second step
-        run: echo bye-bye
+    - name: say hello
+      run: echo "Hello! world"
+    - name: second step
+      run: echo "bye-bye"
